@@ -1,0 +1,33 @@
+{
+  "name": "gleam-snippets",
+  "displayName": "Gleam Snippets",
+  "description": "Beautiful snippets for Gleam programming language!",
+  "author": {
+    "name": "ANKDDEV",
+    "url": "https://github.com/ankddev"
+  },
+  "icon": "./icon.png",
+  "publisher": "ANKDDEV",
+  "homepage": "https://github.com/ankddev/vscode-gleam-snippets/blob/main/README.md",
+  "repository": {
+    "url": "https://github.com/ankddev/vscode-gleam-snippets.git",
+    "type": "git"
+  },
+  "pricing": "Free",
+  "license": "MIT",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.98.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "gleam",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}

@@ -1,0 +1,123 @@
+{
+    "Hello, world": {
+        "prefix": ["helloworld"],
+        "description": "Basic `Hello world` program",
+        "isFileTemplate": true,
+        "body": ["import gleam/io", "", "pub fn main() {", "\tio.println(\"Hello, World!\")", "}"]
+    },
+    "import .. as ..": {
+        "prefix": ["import", "importas"],
+        "description": "Import with alias",
+        "body": "import $0 as $1"
+    },
+    "import from": {
+        "prefix": ["import", "importfrom"],
+        "description": "Add unqualified import",
+        "body": "import $0.{$1}"
+    },
+    "import type from": {
+        "prefix": ["import", "importtypefrom"],
+        "description": "Add unqualified import of type",
+        "body": "import $0.{type $1}"
+    },
+    "public type alias": {
+        "prefix": ["pub type"],
+        "description": "Alias for type (public)",
+        "body": "pub type $0 = $1"
+    },
+    "type alias": {
+        "prefix": ["type"],
+        "description": "Alias for type (private)",
+        "body": "type $0 = $1"
+    },
+    "debug": {
+        "prefix": "debug",
+        "description": "Print value to terminal",
+        "body": "io.debug($0)"
+    },
+    "function": {
+        "prefix": ["func", "function", "fn"],
+        "description": "Function",
+        "body": ["fn $0($1) {", "\t$2", "}"]
+    },
+    "function with return type": {
+        "prefix": ["func", "functionreturn", "fn"],
+        "description": "Function with return type",
+        "body": ["fn $0($1) -> $2 {", "\t$3", "}"]
+    },
+    "public function": {
+        "prefix": ["func", "function", "fn", "pub fn"],
+        "description": "Public function",
+        "body": ["pub fn $0($1) {", "\t$2", "}"]
+    },
+    "public function with return type": {
+        "prefix": ["func", "functionreturn", "fn", "pub fn"],
+        "description": "Public function with return type",
+        "body": ["pub fn $0($1) -> $2 {", "\t$3", "}"]
+    },
+    "anonymous function": {
+        "prefix": ["fn", "anfn"],
+        "description": "Anonymous function",
+        "body": "fn($0) { $1 }"
+    },
+    "generic function": {
+        "prefix": ["generic", "fn", "func", "function"],
+        "description": "Function with generic argument",
+        "body": ["fn $0($1: a) -> a {", "\t$2", "}"]
+    },
+    "labeled function parameters": {
+        "prefix": ["labeled", "fn", "func", "function"],
+        "description": "Function with labeled parameters",
+        "body": ["fn $0($1 $2:$3) {", "\t$4", "}"]
+    },
+    "labeled function parameters with return type": {
+        "prefix": ["labeled", "fn", "func", "function"],
+        "description": "Function with labeled parameters",
+        "body": ["fn $0($1 $2:$3) -> $4 {", "\t$5", "}"]
+    },
+    "deprecated":{
+        "prefix": ["depr", "deprecated", "@"],
+        "description": "Mark definition as deprecated",
+        "body": "@deprecated(\"$0\")"
+    },
+    "case": {
+        "prefix": "case",
+        "description": "Simple case construction",
+        "body": ["case $0 {", "\t$1 -> $2", "\t$3 -> $4", "\t_ -> $5", "}"]
+    },
+    "tuple": {
+        "prefix": ["tuple", "#("],
+        "description": "Tuple value",
+        "body": "#($0, $1)"
+    },
+    "custom type": {
+        "prefix": ["type", "pub type"],
+        "description": "Custom type declaration",
+        "body": ["pub type $0 {", "\t$1", "\t$2", "}"]
+    },
+    "custom type with record": {
+        "prefix": ["type", "pub type"],
+        "description": "Custom type declaration with record",
+        "body": ["pub type $0 {", "\t$1($2:$3)", "}"]
+    },
+    "custom type with generic": {
+        "prefix": ["type", "pub type"],
+        "description": "Custom type declaration with generic",
+        "body": ["pub type $0($1) {", "\t$2($3)", "}"]
+    },
+    "todo with reason": {
+        "prefix": "todo",
+        "description": "TODO mark with reason",
+        "body": "todo as $0"
+    },
+    "panic with reason": {
+        "prefix": "panic",
+        "description": "Call panic with reason",
+        "body": "panic as $0"
+    },
+    "external": {
+        "prefix": ["@", "external"],
+        "description": "External mark for functions",
+        "body": "@external($0, \"$1\", \"$2\")"
+    }
+}
