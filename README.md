@@ -1,5 +1,7 @@
 <div align="center">
     <img src="icon.png" />
+    <br />
+    <a href="https://marketplace.visualstudio.com/manage/publishers/ANKDDEV/extensions/gleam-snippets/hub">Marketplace</a>
 </div>
 
 # gleam-snippets for VS Code
