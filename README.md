@@ -2,7 +2,7 @@
     <img src="icon.png" />
 </div>
 
-# gleam-snippets
+# gleam-snippets for VS Code
 
 Some useful snippets for [Gleam](https://gleam.run).
 
