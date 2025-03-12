@@ -1,7 +1,7 @@
 <div align="center">
     <img src="icon.png" />
     <br />
-    <a href="https://marketplace.visualstudio.com/manage/publishers/ANKDDEV/extensions/gleam-snippets/hub">Marketplace</a>
+    <a href="https://marketplace.visualstudio.com/items?itemName=ankddev.gleam-snippets">Marketplace</a>
      | 
     <img src="https://img.shields.io/visual-studio-marketplace/d/ankddev.gleam-snippets?style=flat-square" />
     <img src="https://img.shields.io/visual-studio-marketplace/v/ankddev.gleam-snippets?style=flat-square" />
